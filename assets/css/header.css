@@ -1,0 +1,23 @@
+header {
+  background-color: #5b5bff;
+  color: #f3efef; }
+  header ul {
+    display: flex;
+    height: 10vh;
+    list-style: none;
+    text-decoration: none; }
+    header ul li {
+      letter-spacing: 2px;
+      font-weight: 430;
+      padding-right: 14px;
+      padding-left: 10px;
+      display: flex;
+      align-items: center; }
+      header ul li:nth-child(1) {
+        margin-right: auto;
+        font-size: 1.4rem;
+        font-weight: 480;
+        letter-spacing: 2px; }
+      header ul li a {
+        text-decoration: none;
+        color: white; }

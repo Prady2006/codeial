@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    height: 10vh;
+    padding-top: 10px;
+    background-color: rgb(91, 91, 255);
+    & > span {
+        padding-right: 5px;
+
+        &:nth-child(3){
+            margin-right: auto;
+        }
+    }
+     
+}
