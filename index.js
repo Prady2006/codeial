@@ -68,6 +68,7 @@ app.use(flash());
 
 app.use(customMiddleware.setFlash);
 
+app.use("/uploads" , express.static(__dirname + "/uploads"));
 // use express router
 app.use('/', require('./routes'));
 
