@@ -1,6 +1,9 @@
 const User = require('../models/user');
 const multer = require('multer');
 
+const fs = require('fs');
+const path = require('path');
+
 module.exports.profile = function(req, res){
 
     User.findById(req.params.id , function(error, user){
@@ -44,6 +47,14 @@ module.exports.update = async function(req , res ){
                 user.name = req.body.name ;
                 user.email = req.body.email ;
                 if(req.file){
+
+                    if(user.avatar){
+                        let pathToImg = path.join(__dirname ,'../assets', user.avatar ) ;
+                        if(fs.existsSync(pathToImg)){
+                            fs.unlinkSync( pathToImg );
+                        }
+                    }
+
                     // saving the path of uploaded file into avatar field in the user 
                     user.avatar = User.avatarPath + '/' + req.file.filename ;
                 }
