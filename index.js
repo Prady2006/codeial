@@ -13,6 +13,7 @@ const MongoStore = require('connect-mongo')(session);
 const sassMiddleware = require('node-sass-middleware');
 const flash = require('connect-flash');
 const customMiddleware = require('./config/middleware');
+const passportJWT = require('./config/passport-jwt-strategy');
 
 app.use(sassMiddleware({
     src: './assets/scss',
