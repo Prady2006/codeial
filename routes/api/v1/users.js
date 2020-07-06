@@ -4,6 +4,6 @@ const passport = require('passport');
 
 const usersapi = require('../../../controllers/api/v1/users_api');
 
-router.post('/create-session', passport.authenticate('jwt',{session: false}), usersapi.createSession);
+router.post('/create-session', usersapi.createSession);
 
 module.exports = router

@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
+const passport = require('passport');
 // const postapi = require('../../../controllers/api/v1/posts_api');
 const postapi = require('../../../controllers/api/v1/posts_api');
 
 console.log('reached ');
 router.get( '/' , postapi.index);
-router.delete('/:id',postapi.destroy);
+router.delete('/:id', passport.authenticate('jwt',{session: false}) , postapi.destroy);
 
 module.exports = router ;

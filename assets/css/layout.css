@@ -8,5 +8,6 @@ body {
   flex-direction: column;
   height: auto; }
   body #layout-main {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-color: lightblue; }

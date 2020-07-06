@@ -14,6 +14,7 @@ const sassMiddleware = require('node-sass-middleware');
 const flash = require('connect-flash');
 const customMiddleware = require('./config/middleware');
 const passportJWT = require('./config/passport-jwt-strategy');
+const googlePassport = require('./config/passport-google-oauth2-strategy');
 
 app.use(sassMiddleware({
     src: './assets/scss',
