@@ -1,32 +1,35 @@
-header {
-    
-    background-color: rgb(91, 91, 255);
-    color: rgb(243, 239, 239);
-    ul {
+#layout-header{
+    nav{
         display: flex;
-        height: 10vh;
-        list-style: none;    
-        text-decoration: none;
+        justify-content: space-between;
+        padding: 0 10px;
+        background: #2196f3;
+        color: white;
+        box-shadow: 1px 1px 1px 1px lightgrey;
 
-        li {
-            &:nth-child(1){
-                margin-right: auto;
+        .mini-logo{
+            p{
+                margin: 5px;
                 font-size: 1.4rem;
-                font-weight: 480;
-                letter-spacing: 2px;
-            }
-            letter-spacing: 2px;
-            font-weight: 430;
-            padding-right: 14px;
-            padding-left: 10px;
-            display: flex;
-            align-items: center;
-
-            a {
-                text-decoration: none;
-                color: white;
+                font-weight: bold;
             }
         }
-    }
 
+        .auth-links{
+            ul{
+                margin: 5% 5px;
+                display: flex;
+                list-style: none;
+                li{
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+    }
 }

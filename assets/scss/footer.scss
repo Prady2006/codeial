@@ -1,14 +1,18 @@
-footer {
-    display: flex;
-    height: 10vh;
-    padding-top: 10px;
-    background-color: rgb(91, 91, 255);
-    & > span {
-        padding-right: 5px;
+#layout-footer{
+    color: white;
+    a{
+        color: white;
+        text-decoration: none;
+    }
 
-        &:nth-child(3){
-            margin-right: auto;
+    background: grey;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-start;
+
+    .footer-nav{
+        ul{
+            list-style: none;
         }
     }
-     
 }

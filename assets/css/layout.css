@@ -1,13 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 body {
-  display: flex;
-  flex-direction: column;
-  height: auto; }
+  margin: 0;
+  /* text-align: center; */ }
   body #layout-main {
-    min-height: 100vh;
-    height: auto;
-    background-color: lightblue; }
+    height: 100%; }
