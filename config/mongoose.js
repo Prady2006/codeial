@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-
+const env = require('../config/environment');
 // mongoose.connect('');
-mongoose.connect('mongodb+srv://Prady2006:12345@cluster0-44hjv.mongodb.net/codeial?retryWrites=true&w=majority');
+mongoose.connect(env.db);
 
 const db = mongoose.connection;
 
