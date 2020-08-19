@@ -36,12 +36,13 @@ if(env.name == 'development'){
         prefix: '/css'
     }));
 }
-
+console.log("current env is : ",env.name);
 app.use(express.urlencoded());
 
 app.use(cookieParser());
 
 app.use(express.static(path.join('.' , env.asset_path)));
+console.log("path to search css/js files :",env.asset_path);
 // make the uploads path available to the browser
 app.use('/uploads', express.static(__dirname + '/uploads'));
 

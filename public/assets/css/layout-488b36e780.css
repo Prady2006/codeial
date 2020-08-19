@@ -1,0 +1,6 @@
+body {
+  margin: 0;
+  /* text-align: center; */ }
+  body #layout-main {
+    min-height: 79.5vh;
+    height: auto; }
