@@ -1,0 +1,8 @@
+export CODEIAL_SESSION_COOKIE_KEY="blahsomething";
+export CODEIAL_DB="mongodb+srv://Prady2006:12345@cluster0-44hjv.mongodb.net/codeial?retryWrites=true&w=majority"
+export CODEIAL_USER="sharmaabhilashaa20.16@gmail.com";
+export CODEIAL_PASS="abhilashaa_prady2016";
+export CODEIAL_GOOGLE_CLIENTID="302162156750-mktlj2ng4vo2ol9lqnh8hkjmobelgf79.apps.googleusercontent.com";
+export CODEIAL_GOOGLE_CLIENTSECRET="i4rsRwC1oz3lVHQCQllSbAIK";
+export CODEIAL_JWT_SECRET="codeial";
+export CODEIAL_ENVIRONMENT="production";
