@@ -54,7 +54,7 @@ const production = {
     } ,
     google_clientID: process.env.CODEIAL_GOOGLE_CLIENTID,
     google_clientSecret: process.env.CODEIAL_GOOGLE_CLIENTSECRET,
-    google_callbackURL: "http://localhost:8000/users/auth/google/callback",
+    google_callbackURL: "http://52.91.132.60:8000/users/auth/google/callback",
     jwt_key: process.env.CODEIAL_JWT_SECRET,
     morgan: {
         mode: 'combined',
