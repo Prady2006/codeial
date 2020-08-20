@@ -1,13 +1,12 @@
-let env = require('../../config/environment');
 class ChatEngine {
     constructor(chatboxid,email){
         this.chatboxid = document.getElementById(chatboxid);
         this.useremail = email;
-        if(env.name == 'development'){
-            this.socket = io.connect('http://127.0.0.1:5000');
-        }else {
+        // if(env.name == 'development'){
+            // this.socket = io.connect('http://127.0.0.1:5000');
+        // }else {
             this.socket = io.connect('http://52.91.132.60:5000');
-        }
+        // }
         
         if(this.useremail){
             this.connectionHandler()

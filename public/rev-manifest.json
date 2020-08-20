@@ -1,8 +1,5 @@
 {
-  "chat_box.css": "chat_box-4d12a7c66d.css",
-  "footer.css": "footer-f038d75588.css",
-  "header.css": "header-5624c7deef.css",
-  "home.css": "home-97627a7de6.css",
-  "layout.css": "layout-488b36e780.css",
-  "user_profile.css": "user_profile-feaea90467.css"
+  "js/chat_engine.js": "js/chat_engine-0ddd097193.js",
+  "js/home_post_comments.js": "js/home_post_comments-250181bf74.js",
+  "js/home_posts.js": "js/home_posts-dd1b699d35.js"
 }
