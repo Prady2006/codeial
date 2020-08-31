@@ -19,4 +19,5 @@ module.exports.chatSockets = function(chatServer) {
             });
         })
     });
+    return io ;
 }
